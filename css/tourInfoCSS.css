@@ -1,0 +1,170 @@
+/* CSS FILE FOR TOUR INFORMATION PAGE*/
+
+/*set the main font and its size, height, color, margin and padding*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+  font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+  line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+  color: #000000; /* Hex Color Black */
+  margin: 0;
+  padding:0;
+}
+/* Center page in the middle of the screen*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+/*change the size and details of h1 according to preferance*/
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+/*change the size, color and details of h2 according to preferance*/
+h2 {
+  font-size: 20px;
+  line-height: 1.3em;
+  color: #ffffff;
+  margin-left:5%; /*add small margin on left*/
+  word-break: break-all;
+}
+
+/*add small margin on left for unordered list in Tour Includes box*/
+li{
+  margin-left:5%;
+}
+/* navigation menu details*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* adjust height of logo in topnav bar*/
+.topnav img{
+  height:50px;
+}
+/* change color of header to white with no margin and no padding */
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin: 0;
+    padding:0;
+}
+/* navigation menu text details*/
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* change color menu item when hovered over */
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+/* change background of color menu item when is active */
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+/* Center page in the middle of the screen*/
+.mainTwo {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* center buy a ticket button to the left with no margin*/
+.buyTicket{
+  margin-left:0%;
+  float:left;
+  height:60px;
+}
+
+/*no margin left for h3*/
+h3{
+    margin-left:0%;
+}
+
+/* position footer to be at the bottom of the page*/
+footer {
+  
+  bottom : 0;
+  height:60px;
+  width:100%;
+  text-align: center ;
+  font-size: 15px ;
+  color:rgb(255, 0, 0);
+  background-color:#333;
+}
+/* position social media icons to be centered in the footer and with padding between icons*/
+.footerImages{
+  width:40px;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:10px;
+}
+/* let accordion width be 100%*/
+#accordion{
+  width:100%;
+}
+
+/* changing size of thumbnail images to be the same height*/
+#gallery img {
+  height:50px;
+}
+/* float thumbnails to the left and add padding inbetween*/
+#content-gallery img{
+  float:left;
+  padding:25px;
+}
+
+/* formatting columns of table to be centered to the left and full width*/
+.colOne{
+  width:100%;
+  float:left;
+}
+
+/* style the rectangle box for the tour includes sections */
+.tourIncludesCard{
+  width:100%; /* set to full width */
+  text-align:left; /* set text to the left */
+  float:right; /* set card to the right */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* add a shadow for dimension */
+  background-color: #474e5d;
+  padding-top:20px;
+  padding-bottom:20px;
+  color:#f1f1f1;
+  border-color:#0b0197;
+  border-radius: 25px; /* make edges round */
+}
+
+/* style table with border, full width, no spacing, and collapseable*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+/* allign all th and td text to the left and padding on all sides */
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+/* style the h3 text so that it is on the left and has no margin and takes up full width */
+h3{
+  text-align:left;
+  float:left;
+  margin-left:0%;
+  width:100%;
+}
+/* alternates colors of the table to grey and white to make it more readable */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* disable scrolling on the x axis */
+html{ overflow-x: hidden;}

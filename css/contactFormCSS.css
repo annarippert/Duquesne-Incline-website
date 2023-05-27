@@ -1,0 +1,219 @@
+/* CSS FILE FOR MAILING LIST FORM PAGE*/
+
+/*set the main font and its size, height, color, margin and padding*/
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+	color: #000000; /* Hex Color Black */
+  margin: 0;
+  padding:0;
+}
+/*change the size and details of h1 according to preferance*/
+h1 {
+    font-size: 75px;
+    line-height: 1.3em;
+    color: #ffffff;
+  }
+/*turns heading font black*/
+.blackFont{
+  font-size: 75px;
+  line-height: 1.3em;
+  color: #000000;
+}
+/*change the size and details of h2 according to preferance*/
+h2 {
+  font-size: 40px;
+  line-height: 1.3em;
+  color: #000000;
+}
+/*text area for writting comments, add a margin*/
+textarea{
+  resize:none;
+  margin-left:10%;
+}
+/* adjust height of logo in topnav bar*/
+.topnav img{
+  height:50px;
+}
+
+/*make legend bold, centered to the left, a dark grey with margins*/
+fieldset legend{
+  font-weight:bold;
+  text-align:left;
+  font-size: 30px;
+  color:#747474;
+  margin-bottom:10px;
+  margin-left:10%;
+}
+
+/* navigation menu details*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* change color of header with no margin and padding */
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin: 0;
+    padding:0;
+}
+
+/* navigation menu text details*/
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*link for circle back button*/
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+/* change color menu item when hovered over */
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+/* change background of color menu item when is active */
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+/*set text to black and backgroun white to back button*/
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  font-size:30px;
+}
+/*make button round*/
+.round {
+  border-radius: 50%;
+}
+/*make button darker when hovered*/
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*set width of form to 100% and center it*/
+form{
+  width:100%;
+  margin:auto;
+  
+}
+
+/*make legend bold, centered to the middle, a dark grey with margins*/
+legend{
+    font-weight:bold;
+    text-align:center;
+    color:#2e2e2e;
+    margin-bottom:5px;
+}
+
+/*style table on form*/
+table {
+  width:100%; /*full width*/
+  border-spacing: 3px;
+  table-layout: auto;
+  border-collapse: collapse;
+  border-width:3px;
+  background-color:#ffffff;  
+}
+
+/*style table headings on form*/
+table td{
+  color:#5e5e5e;
+  padding-left:10%;
+}
+/*style table rows on form*/
+table tr{
+  padding-left:10%;
+}
+/*style inputs on form and make them just a line*/
+input{
+  padding:2%;
+  width:60%;
+  border:none;
+  outline: none;
+  outline-color:#717171;
+  border-bottom: 1px solid #2e2e2e;
+  
+}
+
+
+/*style checkbox to be a certain width and height on form*/
+input[type=checkbox] {
+  padding:2%;
+  width:10%;
+  border-radius: 25px;
+  height:15px;
+  
+}
+/*submit button on form, center in middle*/
+input[type=image] {
+  width:15%;;
+  margin-left:40%;
+  margin-right:40%;
+  border-bottom: none;
+}
+/*customize input for date on calender*/
+input[type=date]{
+  margin-left:10%;
+  width:30%;
+}
+  
+/*increase line hight on table headings and assign to the left*/
+table th{
+  line-height: 2.5em;
+  text-align:left;
+
+}
+/* Center page in the middle of the screen*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* customize back button on form to be grey, centered, and small with round edges*/
+button{
+  background-color: #e4e4e4;
+  color: rgb(20, 20, 20);
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 4px;
+  cursor: pointer;
+  border-radius:20%;
+}
+
+/*style heading on top of the form to be bigger and black*/
+.contentContact h1{
+  font-size: 50px;
+  word-break: break-all;
+  color:#000000;
+  line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+  margin: 0;
+  padding:10px;
+}
+
+/*make labels a light grey and margin on the left*/
+label{
+  color:#3a3a3a;
+  margin-left:10%;
+}
+
+/*increase h3 heading on form with padding and desired line height*/
+h3{
+  font-size: 25px;
+  line-height: 1.3em;
+  padding-left:10%;
+}
+
+/*dissable scrolling on x-axies*/
+html{ overflow-x: hidden;}

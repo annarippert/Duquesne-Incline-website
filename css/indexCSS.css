@@ -1,0 +1,98 @@
+/* CSS FILE FOR INDEX (HOME) PAGE*/
+
+/*set the main font and its size, height, color, margin and padding*/
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
+	font-size: 100%; 
+	line-height: 1.7em; 
+  color: #000000; 
+  margin: 0;
+  padding:0;
+  background-color:#474e5d;
+  background-image: url("../images/indexBackground.jpg"); /* set the background an image*/
+  background-repeat: no-repeat; /* image only appears once*/
+  object-fit: fill; /* image fills screen*/
+  background-attachment:fixed;
+  background-size:100% 100%;
+}
+/*change the size and details of h1 according to preferance*/
+h1 {
+  font-size: 75px;
+  line-height: 1.3em;
+  color: #ffffff;
+  
+}
+/* navigation menu details*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* adjust height of logo in topnav bar*/
+.topnav img{
+  height:50px;
+}
+/* change color of header to white with no margin and no padding */
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin: 0;
+    padding:0;
+}
+/* navigation menu text details*/
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* change color menu item when hovered over */
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+/* change background of color menu item when is active */
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+/* position the buy a ticket button to be underneath heading */
+.ticketButton{
+  position: fixed;
+  top: 63%;
+  left: 9%;
+  height:9%;
+}
+
+/* position heading to be on the center left side*/
+.center-left {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+}
+
+/* position footer to be at the bottom of the page*/
+footer {
+  position : absolute;
+  bottom : 0;
+  height:60px;
+  width:100%;
+  text-align: center ;
+  font-size: 15px ;
+  color:rgb(255, 0, 0);
+  background-color:#333;
+}
+
+/* position social media icons to be centered in the footer and with padding between icons*/
+.footerImages{
+  width:40px;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:10px;
+}
+
+/* dissable scrolling on both the x and y axis*/
+html{ overflow-x: hidden;}
+html{ overflow-y: hidden;}

@@ -1,0 +1,235 @@
+/* MAIN CSS FILE FOR WEBSITE*/
+
+/*set the main font and its size, height, color, margin and padding*/
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+	color: #000000; /* Hex Color Black */
+  margin: 0;
+  padding:0;
+}
+/*change the size and details of h1 according to preferance*/
+h1 {
+    font-size: 75px;
+    line-height: 1.3em;
+    color: #ffffff;
+  }
+
+/*set font color to black and increase sizing*/
+.blackFont{
+  font-size: 75px;
+  line-height: 1.3em;
+  color: #000000;
+}
+/*change the size, color and details of h2 according to preferance*/
+h2 {
+  font-size: 40px;
+  line-height: 1.3em;
+  color: #000000;
+}
+/* adjust height of logo in topnav bar*/
+.topnav img{
+  height:50px;
+}
+/*increase font and set color to black for about section*/
+.aboutFont{
+  font-size: 75px;
+  line-height: 1.3em;
+  color: #141414;
+  }
+/* navigation menu details*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* change color of header to white with no margin and no padding */
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin: 0;
+    padding:0;
+}
+/* navigation menu text details*/
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* change color menu item when hovered over */
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+/* change background of color menu item when is active */
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+/* set background color to white */
+#containerIndex{
+  background-color:rgb(245, 245, 245);
+}
+/* center blocks of text */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+  }
+/*container holding images and texts*/
+#parent {
+    padding: 0;
+    position:absolute;
+    display: grid;
+    margin: auto;
+    margin-right: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+/* position the text on the screen at the bottom */
+.aboutText{
+  position:absolute;
+  bottom:0px;
+  right:150px;
+  left:950px;
+  top:700px;
+
+}
+/* position heading for text to be center left of screen and make it gold */
+.titleForAboutText{
+  position:absolute;
+  bottom:0px;
+  right:150px;
+  left:950px;
+  top:630px;
+  color:rgb(168, 131, 37);
+  text-align:center;
+}
+
+/*google maps layout*/
+iframe{
+  margin-left:0%;
+}
+/*color of links*/
+.linkColors{
+  color:#191C2F;
+}
+/*color of links visited*/
+.linkColors:visited{
+  color:#D74654;
+}
+/*color of links when hovered*/
+.linkColors:hover{
+  color:#2d7ead;
+}
+/* for row of pictures, sets no marhin left*/
+.pictureTable{
+  margin-left: 0%;
+  width:100%;
+}
+/* adjusts heights of images so they are all the same*/
+.pictureTable img{
+  height:150px;
+}
+
+.shorterWidth{
+  width:40%;
+
+}
+
+/* style table of contact details*/
+table {
+  width:40%;
+  text-align: left;
+  border-spacing: 3px;
+  margin-left: 60%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-width:3px;
+  background-color:#ffffff;
+  
+}
+/* make td in table grey*/
+table td{
+  color:#5e5e5e;
+}
+
+/* make th in table have a margin and a bigger line height*/
+table th{
+  line-height: 2.5em;
+  margin-left:5%;
+
+}
+/* center google maps to the left*/
+#googleMaps{
+  left:0;
+  float:left;
+}
+/* align table of contact details to the right*/
+#contactDetails{
+  text-align:right;
+  margin-left:10%;
+  position:relative;
+}
+/* adjust button height in table*/
+#contactDetails img{
+  height:50px;
+}
+
+/* style heading of table content, increase size and line height, make black*/
+.contactSection h1{
+  font-size: 50px;
+  word-break: break-all;
+  color:#000000;
+  line-height: 1.7em; 
+  margin: 0;
+  padding:10px;
+}
+/* Center page in the middle of the screen*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+/* style heading of content, increase size and line height, make black*/
+.contentContact h1{
+  font-size: 50px;
+  word-break: break-all;
+  color:#000000;
+  line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+  margin: 0;
+  padding:10px;
+}
+/* make all labels grey*/
+label{
+  color:#3a3a3a;
+}
+/* position footer to be at the bottom of the page*/
+footer {
+  bottom : 0;
+  height:60px;
+  width:100%;
+  text-align: center ;
+  font-size: 15px ;
+  color:rgb(255, 0, 0);
+  background-color:#333;
+}
+/* position social media icons to be centered in the footer and with padding between icons*/
+.footerImages{
+  width:40px;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:10px;
+}
+
+/* set background color to white for content*/
+.contactSection{
+  background-color:#ffffff;
+}
+
+/* disable scrolling on the x-axis*/
+html{ overflow-x: hidden;}

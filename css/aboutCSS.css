@@ -1,0 +1,236 @@
+/* CSS FILE FOR ABOUT PAGE*/
+
+/* preferences for navigation bar in terms of color and overflow */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+/* change color of header with no margin and padding */
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin: 0;
+    padding:0;
+}
+
+/* navigation menu text details*/
+.topnav a {
+  float: right; /* float links to the right*/
+  color: #f2f2f2; /* change color to white*/
+  text-align: center; /* center text*/
+  padding: 14px 16px; /* add padding to sides*/
+  text-decoration: none;
+  font-size: 17px; /* specifiy a specifc font size*/
+}
+
+/* change color menu item when hovered over */
+.topnav a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+/* adjust height of logo in topnav bar*/
+.topnav img{
+  height:50px;
+}
+/* change background of color menu item when is active */
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+/*change the size and details of h1 according to preferance*/
+h1{
+  font-size: 50px; /*largen text*/
+  word-break: break-all;
+  color:#ffffff;
+  line-height: 1.7em;  /*increase line height*/
+  margin: 0;
+  padding:10px;
+}
+
+/* Center website in the middle of the page*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+  
+}
+
+/* deactiviate scrolling on the x axis*/
+html{ overflow-x: hidden;}
+
+
+/*adding padding and border in the width and height of each activity box*/
+* {
+  box-sizing: border-box;
+}
+
+/*set the main font and its size, height, color, margin and padding*/
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; /* Set all font in the page to Helvetica with font formating */
+font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. */
+background-color: #474e5d;
+margin: 0;
+padding:0;
+}
+
+/* aligns table in the center*/
+table{
+  text-align:center;
+  width:100%;
+}
+
+/* changes table headers to white and chnages size*/
+table th{
+  font-size:50px;
+  color:#ffffff;
+}
+
+/* changes table content to white and chnages size*/
+table td{
+  font-size:10px;
+  color:#d5d2d2;
+
+}
+
+/*Used https://www.w3schools.com/howto/howto_css_timeline.asp for referecne for all timeline related css */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The timeline inserting content and where to put it on the timeline box*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content in the timeline*/
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the middle of the timeline line*/
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #8631d5;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* changes paragraph text to white in top description*/
+p{
+    color:#f2f2f2;
+}
+/* changes paragraph text to black inside timeline box*/
+.content p{
+    color:#000000;
+}
+/* Place the timeline container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the timeline container to the right */
+.right {
+  left: 50%;
+}
+
+/* centers main image at the top of page*/
+.centerImage{
+  margin-left:30%;
+  margin-right:30%;
+  height:250px;
+}
+
+/* Add arrows to the left container in timeline box (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container in timeline box (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* change style of text in timeline box*/
+.content {
+  padding: 20px 30px; /* add padding to sides*/
+  background-color: white; 
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
