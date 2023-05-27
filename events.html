@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name = "name" content= "The Duquesne Incline">
+    <title>Activities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External Links to CSS files -->
+    <link rel = "stylesheet" media="all" type="text/css" href="css/eventsCSS.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+     <!-- External Links to JS files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!--script for accordion-->
+      <script>
+      $(function() {
+        $( "#accordion" ).accordion();
+      });
+      </script>
+    <!--script for tabs-->
+    <script>
+      $(function() {
+          $( "#tabs" ).tabs({
+            event: "mouseover"
+          });
+      });
+      </script>
+</head>
+<body> <!--starting body-->
+  <header>
+        <!--navigation bar menu-->
+        <div class="topnav">
+            <!--logo on far left-->
+            <img src="images/logo.png" alt="image of logo"/>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="ThingsToDo.html">Activities</a>
+            <a href= "TourInformation.html">Tour Information</a>
+            <a href="About.html">About</a>
+            <a href="index.html">Home</a>
+          </div>
+
+    </header> <!--closing header-->
+
+    
+
+<!-- MAIN (Center website) -->
+<div class="main">
+  <!--heading of the page-->
+  <h1>Activities</h1>
+  <!--horizontal line divisor-->
+  <hr>
+
+    <!--creating tabs for each activity-->
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Tours</a></li>
+        <li><a href="#tabs-2">Restaurants</a></li>
+        <li><a href="#tabs-3">Station Square</a></li>
+        <li><a href="#tabs-4">North Shore</a></li>
+      </ul>
+      <!--filling in name, image, contact info for each activity in tab 1-->
+      <div id="tabs-1">
+        <div class="row">
+          <div class="column">
+            <h4>Molly's Tolleys</h4>
+            <img src="images/trolley.png" alt="trolley bus">
+            <p>www.mollystrolleyspgh.com</p>
+            <p>412-281-2055</p>
+          </div>
+          <div class="column">
+            <h4>Rivers of Steel</h4>
+            <img src="images/steel.png" alt="steel plant">
+            <p>www.riversofsteel.com</p>
+            <p>412-464-4020</p>
+          </div>
+          <div class="column">
+            <h4>Pittsburgh Tour Company</h4>
+            <img src="images/bus.jpg" alt="tour bus">
+            <p>www.pghtours.com</p> 
+            <p>412-381-8687</p>
+          </div>
+          
+        </div>
+      </div>
+      <!--filling in name, image, contact info for each activity in tab 2-->
+      <div id="tabs-2">
+        <div class="row">
+          <div class="column">
+            <h4>Altius Restaurant</h4>
+            <img src="images/altius.jpg" alt="restaurant altius">
+            <p>www.altiuspgh.com</p>
+            <p>412-904-4442</p>
+          </div>
+          <div class="column">
+            <h4>The Grandview Saloon</h4>
+            <img src="images/saloon.jpg" alt="restaurant Grandview Saloon">
+            <p>www.thegrandviewsaloon.com/</p>
+            <p>412-431-1400</p>
+          </div>
+          <div class="column">
+            <h4>LeMont Restaurant</h4>
+            <img src="images/lemont.png" alt="restaurant LeMont">
+            <p> www.lemontpittsburgh.com </p>
+            <p>412-431-3100</p>
+          </div>
+          <div class="column">
+            <h4>Monterey Bay Fish Grotto</h4>
+            <img src="images/Monterey.png" alt="restaurant Monterey Bay Fish Grotto">
+            <p> www.montereybayfishgrotto.com</p>
+            <p>412-381-1919</p>
+          </div>
+          <div class="column">
+            <h4>Vue 412</h4>
+            <img src="images/vue.png" alt="restaurant Vue 412">
+            <p>www.vue412.com</p>
+            <p>412-381-1919</p>
+          </div>
+        </div>
+      </div>
+      <!--filling in name, image, contact info for each activity in tab 3-->
+      <div id="tabs-3">
+        <div class="row">
+          <div class="column">
+            <h4>Hard Rock Cafe</h4>
+            <img src="images/cafe.jpg" alt="Hard Rock Cafe">
+            <p>www.hardrock.com/pittsburgh</p>
+            <p>412-481-7625</p>
+          </div>
+          <div class="column">
+            <h4>Sheraton Pittsburgh Hotel</h4>
+            <img src="images/hotel.jpeg" alt="Pittsburgh hotel">
+            <p>www.sheraton.com/stationsquare</p>
+            <p>412-261-2000</p>
+          </div>
+          <div class="column">
+            <h4>Buca De Bepo</h4>
+            <img src="images/buca.png" alt="restaurant Buca De Bepo">
+            <p>www.bucadibeppo.com</p>
+            <p>412-471-9463</p>
+          </div>
+          <div class="column">
+            <h4>Gateway Clipper Fleet</h4>
+            <img src="images/cruise.png" alt="cruise">
+            <p> www.gatewayclipper.com</p>
+            <p>412-355-7993</p>
+          </div>
+          <div class="column">
+            <h4>Grand Concourse</h4>
+            <img src="images/grandConcourse.png" alt="restaurant Grand Concourse">
+            <p>www.grandconcourserestaurant.com</p>
+            <p>412-261-1717</p>
+          </div>
+          </div>
+      </div>
+      <!--filling in name, image, contact info for each activity in tab 4-->
+      <div id="tabs-4">
+        <div class="row">
+          <div class="column">
+            <h4>PNC Park</h4>
+            <img src="images/PNC.jpg" alt="PNC stadium">
+            <p>www.pittsburghpirates.com </p>
+            <p>412-321-BUCS </p>
+          </div>
+          <div class="column">
+            <h4>Rovers Casino Pittsburgh</h4>
+            <img src="images/casino.png" alt="Casino">
+            <p>www.theriverscasino.com</p>
+            <p>412-231-7777</p>
+          </div>
+          <div class="column">
+            <h4>Kayak Pittsburgh </h4>
+            <img src="images/kayak.png" alt="kayak">
+            <p> www.kayakpittsburgh.org</p>
+            <p>412-969-9090</p>
+          </div>
+          <div class="column">
+            <h4>Carnegie Science Center</h4>
+            <img src="images/sciencecenter.jpg" alt="Science Center">
+            <p>www.carnegiesciencecenter.org</p>
+            <p>412-237-3336</p>
+          </div>
+          <div class="column">
+            <h4>Children's Museum</h4>
+            <img src="images/museum.jpg" alt="Children's museum">
+            <p>www.pittsburghkids.org </p>
+            <p>412-322-5058</p>
+          </div>
+          <div class="column">
+            <h4>Andy Warhol Museum</h4>
+            <img src="images/andyWarhol.png" alt="andy warhol museum">
+            <p>www.warhol.org</p>
+            <p>412-237-8300</p>
+          </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+</body><!--closing body tag-->
+</html>

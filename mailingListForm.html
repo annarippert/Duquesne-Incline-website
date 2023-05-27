@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "name" content= "The Duquesne Incline">
+        <title>Join Mailing List</title>
+        <!-- External Links to CSS files -->
+        <link rel = "stylesheet" href="css/contactFormCSS.css">
+         <!-- External Links to JS files -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.lightbox.min.js"></script>
+        
+    </head>
+    <body>
+    <div id="container">
+        <div id="top_row">
+            <header> 
+                    <!--navigation bar menu-->
+                    <div class="topnav">
+                        <!--logo on far left-->
+                        <img src="images/logo.png" alt="image of logo"/>         
+                        <a href="contact.html">Contact</a>
+                        <a href="events.html">Activities</a>
+                        <a href="TourInformation.html">Tour Information</a>
+                        <a href="About.html">About</a>
+                        <a href="index.html">Home</a>
+                    </div>
+            </header>
+        </div>
+
+    <div class="main">
+    <!--heading of page-->
+    <h2>Join Mailing List</h2>
+    <!--horizontal line divisor-->
+    <hr>
+
+    <div id="contentContact"> 
+        <!--back button leading to previous page-->
+        <a href="contact.html" class="previous round">&#8249;</a>
+        <!--check validation after submit button pressed-->
+        <form onsubmit="return validate()" action="mailto:duq.incline@duquesneincline.org" method="post" enctype="text/plain">
+        <fieldset>
+            <h3>Sign Up</h3>
+            <table>
+                <tr>
+                    <!--name and zip code inputs-->
+                    <td><input type="text" id="uname" name="Name" value="" placeholder="Name" size="20" maxlength ="250" required></td>
+                    <td><input type="text" id="zipCode" name="Zipcode" pattern="[0-9]{5}" placeholder="Zip Code" minlength="5" maxlength="5"></td>
+                </tr>
+                <tr>
+                    <!--adding a white spacing in between-->
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <!--email and phone number inputs-->
+                    <td><input type="email" id="email" name="Email" value="" placeholder="Email Address" required ></td>
+                    <td><input type="text" id="phone" name="Phone" value="" placeholder="Phone Number" minlength="10" ></td>
+                </tr>
+                <tr>
+                    <!--adding a white spacing in between-->
+                    <td><br></td>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <!--label explaining checkbox-->
+                    <th colspan="2"><label>Subscribe to Duquesne Incline's Newsletter:</label></th>
+                </tr>
+                <tr>
+                    <!--subscribe checkbox-->
+                    <td colspan="2"><input type="checkbox" id="signup" name="Mailing List" value="yes">Subscribe!</td>
+                    
+                </tr>
+            </table>
+            <!--checks validate function in js once submitted-->
+            <input onclick="validate()" type ="image" src="images/submit.png" alt="Submit Button">
+        </fieldset>
+        </form>
+        
+    </div>
+    </div>
+            
+</div> 
+
+</body>
+
+
+</html>

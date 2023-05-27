@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META tags help search engines identify content more easily -->
+    <meta charset="utf-8" />
+    <meta name = "name" content= "The Duquesne Incline">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Tour Information</title>
+
+    <!-- External Links to CSS files -->
+    <link rel = "stylesheet" href="css/tourInfoCSS.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <!-- External Links to JS files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    <!-- script for the accordion -->
+    <script>
+      $(function() {
+        $( "#accordion" ).accordion();
+      });
+    </script>
+    <!-- script for gallery photos in lightbox -->
+    <script >
+        $(function(){
+            $('#gallery a').lightBox();
+        });
+    </script>
+
+</head>
+
+<body> <!--main body content -->
+
+    <header>
+        <!--navigation bar menu-->
+        <div class="topnav">
+            <!--logo on far left-->
+            <img src="images/logo.png" alt="image of logo"/>
+            <a href="contact.html">Contact</a>
+            <a href="events.html">Activities</a>
+            <a class="active" href= "TourInformation.html">Tour Information</a>
+            <a href="About.html">About</a>
+            <a href="index.html">Home</a>
+          </div>
+
+    </header> <!--close header-->
+
+    
+        <div class="mainTwo">
+            <!--header for page-->
+            <h1>Tour Information</h1>
+            <hr>
+                <div class="colOne">
+                    <!--table with prices according to type of group-->
+                    <h3>Prices:</h3>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Age</th>
+                            <th>One Way</th>
+                            <th>Round Trip</th>
+                        </tr>
+                        <tr>
+                            <td>Children</td>
+                            <td>6 to 11</td>
+                            <td>$1.00</td>
+                            <td>$1.75</td>
+                        </tr>
+                        <tr>
+                            <td>College Students</td>
+                            <td>18 to 23</td>
+                            <td>Free</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td>Adults</td>
+                            <td>12 to 64</td>
+                            <td>$2.50</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Seniors</td>
+                            <td>65+</td>
+                            <td>Free</td>
+                            <td>Free</td>
+                        </tr>
+                    </table>
+                <div class="colOne">
+                    <!--hours open table -->
+                    <h3>Hours Open:</h3>
+                    <table>
+                        <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                            <th>Holidays</th>
+                        </tr>
+                        <tr>
+                            <td>5:30am to 12:30am</td>
+                            <td>5:30am to 12:30am</td>
+                            <td>5:30am to 12:30am</td>
+                            <td>5:30am to 12:30am</td>
+                            <td>5:30am to 12:30am</td>
+                            <td>5:30am to 12:30am</td>
+                            <td>7:00am to 12:30am</td>
+                            <td>7:00am to 12:30am</td>
+                
+                        </tr>
+                    </table>
+                </div>
+                <!--button to buy a ticket-->
+                <a href="buyTicket.html"><img class="buyTicket" src="images/ticket.png" alt=" buy a ticket button" ></a>
+                </div>
+            
+            <div class="tourIncludesCard">
+            <!--informational box about what the tour entails-->
+            <br>
+                <h2>Tour Includes</h2>
+                <!--unordered list-->
+                <ul class="a">
+                    <li>Pictorial history of Pittsburgh's industry, inclines, sports venues, and natural disasters</li>
+                    <li>Visit to the machine room to observe the original hoisting equipment</li>
+                    <li>A panoramic view of Downtown Pittsburgh</li>
+                    <li>Gift shop for post cards and souvenirs</li>
+                </ul>
+            </div>
+            <br> <br>
+        
+            
+            <br> <br>
+            <div id="content-gallery">
+            <!--lightbox gallery for special tour options-->
+            <h3> Special Tour Options</h3>
+           
+			  <div id="gallery">
+			  <br>
+                <!--identifing both thumbnail and normal sized pictures -->
+			    <div id="galleryThumbnail1"><div id="thmbnlShadow1">
+                    <a href="images/group.jpg" title="GROUP TOURS: For groups of 10 or more. Tours closed due to PA's social distancing requirements.">
+                    <img src="images/groupThumb.png" alt="group thumbnail"/></a></div></div>
+                
+                    <div id="galleryThumbnail2"><div id="thmbnlShadow2">
+                    <a href="images/students.jpg" title=" FIELD TRIPS: Fun, educational and no extra charge for students and youth groups. Teacher's lesson packet also free.">
+                    <img src="images/studentsThumb.png" alt="students thumbnail"></a></div></div>
+                
+                    <div id="galleryThumbnail3"><div id="thmbnlShadow3">
+                    <a href="images/patch.png" title="PATCH PROGRAM: Ride, learn and earn a Patch.">
+                    <img src="images/patchThumb.png" alt="kids patch program thumbnail"></a></div></div>
+                    <!--text on the side to describe thumbnails-->
+                    <p>We offer three special types of programs: Group Tours, 
+                    Field Trips and Patch Program. All programs included a round 
+                    trip ride on The Duquesne Incline, discussions about the 
+                    incline and its past, visits to the machine room and more! 
+                    Click on the thumbnail to see full image and description</P>
+			  </div>
+		    </div>
+        </div>
+        <br>
+        <div class="main">
+
+            <div id="content">
+                <!--subheading-->
+                <h3>Frequently Asked Questions:</h3>
+                <br><br>
+                    <!--accordion with FAQs-->
+                    <div id="accordion">
+                        <h4>Is there a Change Machine?</h4>
+                        <div>
+                            <p> The Duquesne Incline is part of the transportation system in 
+                            Pittsburgh and therefore uses the same _CASH_ fare system as the 
+                            buses and trolleys. A change machine is available for your 
+                            convenience. Having the exact fare in hand speeds up the payment 
+                            process considerably. Cash fares as well as Port Authority bus 
+                            passes and tickets are accepted as payment.</p></div>
+                        
+                        <h4>Can Seniors, 65 and older, ride free?</h4>
+                        <div>
+                            <p> The Duquesne Incline is required to request a Pennsylvania 
+                            Senior Citizen ID card as proof of age, no exceptions, in order to 
+                            be reimbursed by the Commonwealth of PA.</p></div>
+                        
+                        <h4>Are there Restrooms?</h4>
+                        <div>
+                            <p> Sorry, no rest rooms. A port-a-john is available outside of 
+                            the lower station. The Duquesne Incline has been part of 
+                            Pittsburgh's transportation system (not an amusement ride) 
+                            since 1877 like a trolley or the cable cars of San Francisco.</p></div>
+                    
+                        <h4>How long are the waiting times?</h4>
+                        <div>
+                            <p> Saturday's and Sunday's after noon are our busiest times. 
+                            Expect to wait in line for about 10 minutes in both directions.</p>
+                        </div>
+                        <h4>Is it possible to get on the Duquesne Incline with a wheelchair?</h4>
+                        <div>
+                            <p> There are many steps to traverse from the lower station 
+                            parking lot.The Upper Station located at 1220 Grandview Ave, 
+                            Pittsburgh, Pa. 15211 is wheelchair accessible. Our observation 
+                            deck is also wheelchair accessible. The Historic (original) Incline 
+                            cars can accommodate wheelchairs up to 25 inches in width.</p>
+                        </div>
+                        <h4>Where can I park?</h4>
+                        <div>
+                            <p> You can park at: 1197 West Carson St. Pittsburgh, PA. 15219</p>
+                        </div>
+                        <h4>Who can I contact if my question is not answered above?</h4>
+                        <div>
+                            <p> Contact Tom Reinheimer at 412-381-1665 or E-mail tomreinheimer@duquesneincline.org </p>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+
+    <footer>
+        <!--social media/review sites icons-->
+        <a href="https://www.instagram.com/explore/locations/864525169/duquesne-incline" target="_blank"><img class="footerImages" src="images/instagramIcon.png" alt="instagram Icon"/></a>
+            
+        <a href="https://www.tripadvisor.com/Attraction_Review-g53449-d199154-Reviews-Duquesne_Incline-Pittsburgh_Pennsylvania.html" target="_blank"><img class="footerImages" src="images/tripadvisorIcon.png" alt="Tripadvisor Icon"/></a>
+            
+        <a href="https://www.facebook.com/TheDuquesneIncline/" target="_blank"><img class="footerImages" src="images/facebookIcon.png" alt="facebook Icon"/></a>
+            
+    </footer>
+</body><!--closing body tag-->
+
+
+</html>

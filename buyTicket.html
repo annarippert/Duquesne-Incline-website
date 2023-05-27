@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "name" content= "The Duquesne Incline">
+         <!-- External Links to CSS files -->
+        <link rel = "stylesheet" href="css/contactFormCSS.css">
+        <title>Buy a Ticket</title>
+         <!-- External Links to JS files -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/ticketForm.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery.lightbox.min.js"></script>
+        
+    </head>
+
+    <body>
+    <div id="container">
+        <div id="top_row">
+            <header> 
+                    <!--navigation bar menu-->
+                    <div class="topnav">
+                        <!--logo on far left-->
+                        <img src="images/logo.png" alt="image of logo"/>         
+                        <a href="contact.html">Contact</a>
+                        <a href="events.html">Activities</a>
+                        <a href="TourInformation.html">Tour Information</a>
+                        <a href="About.html">About</a>
+                        <a href="index.html">Home</a>
+                    </div>
+            </header>
+        </div>
+
+        <div class="main">
+
+        <!--heading-->
+        <h2>Tickets</h2>
+        <!--horizontal line-->
+        <hr>
+
+        <div id="contentContact"> 
+            <!--back button leading to previous page-->
+            <a href="index.html" class="previous round">&#8249;</a>
+            <!--once form is submitted, it check the validate function-->
+            <form onsubmit="return validate()">
+            <fieldset>
+            <legend>Contact Information</legend>
+                <table>
+                    <!--fieldset about user contact details-->
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr> <!--name and email inputs-->
+                        <td><input type="text" id="uname" name="uname" value="" placeholder="First and Last Name" size="20" maxlength ="250" required></td>
+                        <td><input type="email" id="email" name="email" value="" placeholder="Email Address" required ></td>
+                        
+                    </tr>
+                    <tr>
+                        <!--adding a white spacing in between-->
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <!--phone and country inputs-->
+                        <td><input type="text" id="phone" name="phone" value="" placeholder="Phone Number" minlength="10" required ></td>
+                        <td><input type="text" id="country" name="country" placeholder="Country"></td>
+                    </tr>
+                    <tr>
+                        <!--adding a white spacing in between-->
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <!--state and city inputs-->
+                        <td><input type="text" id="state" name="state" placeholder="State" ></td>
+                        <td><input type="text" id="city" name="city" placeholder="City" ></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <!--adding a white spacing in between-->
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <!--address and zipcode inputs-->
+                        <td><input type="text" id="address" name="address" placeholder="Address"></td>
+                        <td><input type="text" id="zipCode" name="zipCode" pattern="[0-9]{5}" placeholder="Zip Code" minlength="5" maxlength="5"></td>
+                        
+                    </tr>
+                    <tr>
+                        <!--adding a white spacing in between-->
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+            <br/>
+            <!--starting a new fieldset for ticket detials-->
+            <fieldset>
+                <legend>Ticket Details</legend>
+                <!--text area where user can put in the quantity of tickets according to their ages-->
+                <label for="child">Please Indicate Number of Tickets:</label><br>
+                <textarea id="child" name="child" rows="1" cols="1"></textarea>
+                <label for="child"> Children (6 to 11)</label><br>
+                <textarea id="stud" name="stud" rows="1" cols="1"></textarea>
+                <label for="stud"> College Student</label><br>
+                <textarea id="adult" name="adult" rows="1" cols="1"></textarea>
+                <label for="adult">Adult (12 to 64)</label><br>
+                <textarea id="senior" name="senior" rows="1" cols="1"></textarea>
+                <label for="senior">Senior (65+)</label><br>
+                <br>
+                <!--user can put in a date to visit-->
+                <label for="date">Date of Visit:</label> <br>
+                <input type="date" id="date" name="date" value="" required><br/><br/>
+                <!--user has the ability to add any comments if needed-->
+                <textarea id="message" name="message" rows="5" cols="65" placeholder="Additional Comments..."></textarea>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <!--seperate fieldset for submit-->
+                <legend>Submit</legend>
+                <input onclick="formConfirmation()" type ="image" src="images/submit.png" alt="Submit Button" name= "btnimage">
+            </fieldset>
+            </form>
+    
+        </div>
+        
+    </div> 
+    </div> 
+    <br/>
+
+</body><!--closing body tag-->
+
+
+
+</html>
